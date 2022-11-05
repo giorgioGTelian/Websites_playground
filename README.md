@@ -2,4 +2,4 @@
 - all the webpages i made at random
 - [PYnative](https://pynative.com/python-data-structure-exercise-for-beginners/ )
 
-![This is an image](https://imgur.com/QNUiF57)
+![This is an image](https://i.imgur.com/QNUiF57.jpg)
