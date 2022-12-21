@@ -26,7 +26,7 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: #999999;
+  color: #333333;
 }
 .clearfix::after {
   content: " ";
@@ -79,7 +79,7 @@ p {
 a {
   font-family: 'Barlow', Helvetica, sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0D1C32;
 }
 ul {
   padding: 0;
@@ -157,7 +157,7 @@ img {
 
 /* Site Footer */
 .footer {
-  background-color: #E8E8E8;
+  background-color: #ECF3FF;
   padding: 30px;
 }
 .footer-navigation {
@@ -207,11 +207,11 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  background-color: #A1A1A1;
+  background-color: #0D1C32;
   color: #FFFFFF;
 }
 .button-secondary {
-  background-color: #A1A1A1;
+  background-color: #627FB0;
   color: #FFFFFF;
 }
 input {
@@ -227,7 +227,7 @@ input {
 /* 6. Page Styles
 ======================================== */
 .page-hero-header {
-  background-color: #BFBFBF; 
+  background-color: #627FB0; 
   background-image: url('images/saturn-background.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -246,13 +246,13 @@ input {
 }
 .main-content-benefits {
   padding: 80px 0;
-  background-color: #F3F3F3;
+  background-color: #F5F9FF;
 }
 .main-content-benefits h2 {
-  color: #9B9B9B;
+  color: #0D1C32;
 }
 .main-content-info {
-  background-color: #BFBFBF;
+  background-color: #627FB0;
   text-align: center;
 }
 .main-content-info-left {
@@ -271,7 +271,7 @@ input {
   text-align: center;
 }
 .main-content-cta {
-  background-color: #3C3C3C;
+  background-color: #0D1C32;
   color: #FFFFFF;
   padding: 80px 0;
 }
