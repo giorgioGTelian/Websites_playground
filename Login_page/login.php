@@ -47,4 +47,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 }
 
+//This will ensure that cURL is connecting to the intended website and not being redirected to a malicious site.
+
+// Initialize a cURL session
+$ch = curl_init();
+
+// Set the URL of the server
+curl_setopt($ch, CURLOPT_URL, 'https://example.com/api/authenticate');
+
+// Set the option to verify the hostname
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+
+// Set other options as needed (e.g., HTTP method, data to send, etc.)
+
+// Send the request and get the response
+$response = curl_exec($ch);
+
+// Close the cURL session
+curl_close($ch);
+
+// Process the response
 ?>
