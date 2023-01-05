@@ -5,6 +5,7 @@
   <!-- Link to the CSS and JavaScript files for the theme -->
   <link rel="stylesheet" href="/css/adminlte.css">
   <script src="/js/adminlte.js"></script>
+  <script src="/js/fetch-data.js"></script>
 </head>
 <body>
   <form method="post" action="/login.php">
@@ -14,5 +15,10 @@
   <input type="password" id="password" name="password"><br><br>
   <input type="submit" value="Submit">
 </form>
+  <script>
+    // Schedule the data fetching functions to run at the specified interval
+    setInterval(fetchData1, interval);
+    setInterval(fetchData2, interval);
+  </script>
 </body>
 </html>
