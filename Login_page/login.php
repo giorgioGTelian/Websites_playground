@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $ch = curl_init();
 
 // Set the URL of the server
-curl_setopt($ch, CURLOPT_URL, 'https://example.com/api/authenticate');
+curl_setopt($ch, CURLOPT_URL, 'https://cloud.fatturapro.click/junior2023/login');
 
 // Set the option to verify the hostname
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
