@@ -1,5 +1,9 @@
 <?php
 
+
+// Start a session to store the authentication token
+session_start();
+
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Get the email and password from the request
@@ -10,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $ch = curl_init();
 
   // Set the URL of the server's authentication API
-  curl_setopt($ch, CURLOPT_URL, 'http://example.com/api/authenticate');
+  curl_setopt($ch, CURLOPT_URL, 'https://cloud.fatturapro.click/junior2023/login');
 
   // Set the HTTP method to POST
   curl_setopt($ch, CURLOPT_POST, true);
@@ -58,7 +62,7 @@ curl_setopt($ch, CURLOPT_URL, 'https://example.com/api/authenticate');
 // Set the option to verify the hostname
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 
-// Set other options as needed (e.g., HTTP method, data to send, etc.)
+/* Set other options as needed (HTTP method, data to send) */
 
 // Send the request and get the response
 $response = curl_exec($ch);
@@ -66,5 +70,5 @@ $response = curl_exec($ch);
 // Close the cURL session
 curl_close($ch);
 
-// Process the response
+
 ?>
