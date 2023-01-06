@@ -8,17 +8,26 @@
   <script src="/js/fetch-data.js"></script>
 </head>
 <body>
-  <form method="post" action="/login.php">
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"><br>
-  <label for="password">Password:</label><br>
-  <input type="password" id="password" name="password"><br><br>
-  <input type="submit" value="Submit">
-</form>
-  <script>
+  <!-- Login form -->
+  <form id="login-form" method="post" action="/login.php">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- Container for the two graphs -->
+  <div id="graphs">
+    <div id="graph1"></div>
+    <div id="graph2"></div>
+  </div>
+</body>
+    <script>
     // Schedule the data fetching functions to run at the specified interval
     setInterval(fetchData1, interval);
     setInterval(fetchData2, interval);
   </script>
-</body>
+
 </html>
+
+
