@@ -1,0 +1,41 @@
+/* Center the loading container on the page */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* Style the loading ball */
+.loading-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  animation: bounce 2s ease-in-out infinite;
+  transform: rotateX(45deg) rotateY(45deg);
+}
+
+.loading-ball_red {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ea1672;
+  animation: bounce 2s ease-in-out infinite;
+  transform: rotateX(45deg) rotateY(45deg);
+}
+
+/* Add the bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(-10px) rotateX(45deg) rotateY(45deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
