@@ -1,5 +1,7 @@
-# HTML_CSS_JS_playground
-- all the webpages i made at random
-- [Mostly from my webpage](https://agrotecnica.altervista.org/)
+# template webpage i made 
+- vanilla html css javascript 
+- jQuery
+- Bootsrap
 
-![This is an image](https://i.imgur.com/QNUiF57.jpg)
+
+
