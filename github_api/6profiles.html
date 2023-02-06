@@ -1,0 +1,13 @@
+<div id="login-list"></div>
+
+<script>
+fetch("https://api.github.com/users")
+  .then(response => response.json())
+  .then(data => {
+    let loginList = "";
+    for (let i = 0; i < 6; i++) {
+      loginList += "<p>" + data[i].login + "</p>";
+    }
+    document.getElementById("login-list").innerHTML = loginList;
+  });
+</script>
