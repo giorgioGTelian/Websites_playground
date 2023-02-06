@@ -6,7 +6,7 @@ fetch("https://api.github.com/users")
   .then(data => {
     let loginList = "";
     for (let i = 0; i < 6; i++) {
-      loginList += "<div><img src='" + data[i].avatar_url + "' style='width:50px; height:50px;'><p>" + data[i].login + "</p><a href='" + data[i].repos_url + "'>Repositories</a></div>";
+      loginList += "<div><img src='" + data[i].avatar_url + "' style='width:50px; height:50px;'><p><a href='" + data[i].html_url + "'>" + data[i].login + "</a></p><a href='" + data[i].repos_url + "'>Repositories</a></div>";
     }
     document.getElementById("login-list").innerHTML = loginList;
   });
