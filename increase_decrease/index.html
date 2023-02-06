@@ -1,0 +1,17 @@
+<button onclick="myFunction()">Click</button>
+<button onclick="ourFunction()">no Click</button>
+
+<p id="demo"></p>
+<script>
+var count = 0;
+function myFunction() {
+  count++;
+  document.getElementById("demo").innerHTML = count;
+}
+  function ourFunction() {
+  if (count > 0) {
+    count--;
+    document.getElementById("demo").innerHTML = count;
+  }
+}
+</script>
