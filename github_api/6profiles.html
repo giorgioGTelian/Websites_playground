@@ -14,9 +14,13 @@
     margin-right: 10px;
   }
 
-  .login-post a {
-    text-decoration: none;
-    color: #333;
+  .login-post button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
   }
 </style>
 
@@ -29,7 +33,7 @@
       .then(data => {
         let loginList = "";
         for (let i = 0; i < 6; i++) {
-          loginList += "<div class='login-post'><img src='" + data[i].avatar_url + "'><p><a href='" + data[i].html_url + "'>" + data[i].login + "</a></p><a href='" + data[i].repos_url + "'>Repositories</a></div>";
+          loginList += "<div class='login-post'><img src='" + data[i].avatar_url + "'><div><button onclick=\"window.location.href='" + data[i].html_url + "'\">" + data[i].login + "</button><button onclick=\"window.location.href='" + data[i].repos_url + "'\">Repositories</button></div></div>";
         }
         document.getElementById("login-list").innerHTML = loginList;
       });
@@ -39,3 +43,4 @@
     generateLoginList();
   });
 </script>
+
