@@ -1,0 +1,131 @@
+* {
+    font-family: Inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .tree-nav__item-title:hover {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      background: rgba(255, 255, 255, 0.2);
+      border-left: red 7px solid;
+    }
+    
+    .tree-nav__item-title:active,
+    .tree-nav__item-title:focus {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      background: rgba(255, 255, 255, 0.2);
+      border-left: red 7px solid;
+    }
+  summary {
+    display: block;
+    cursor: pointer;
+    outline: 0; 
+  }
+  
+  summary::-webkit-details-marker {
+      display: none;
+    }
+  
+  body {
+    background-color: #ffffff;
+    color: #282828;  
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    padding: 3rem;
+  }
+  
+  .home-logo {
+    position: relative;
+    left: -3px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  img.home-logo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .tree-nav__item {
+    display: block;
+    white-space: nowrap;
+    color: rgb(39, 39, 39);
+    position: relative;
+  }
+  .tree-nav__item.is-expandable::before {
+    border-left: 2px solid #C3C3C3;
+    content: "";
+    left: 0.3rem;
+    position: absolute;
+    height: calc(100%);
+  }
+  .tree-nav__item .tree-nav__item {
+    margin-left: 1.4rem;
+  }
+  .tree-nav__item.is-expandable[open] > .tree-nav__item-title::before {
+
+    font-family: "Inter";
+    transform: rotate(90deg);
+  }
+  .tree-nav__item.is-expandable > .tree-nav__item-title {
+
+    padding-left: 1.4rem;
+  }
+  .tree-nav__item.is-expandable > .tree-nav__item-title::before {
+
+    position: absolute;
+    will-change: transform;
+    transition: transform 300ms ease;
+    
+    color: rgb(41, 40, 40);
+    font-size: 1.1rem;
+  
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+  }
+  
+  .tree-nav__item-title {
+    cursor: pointer;
+    display: block;
+    outline: 0;
+    color: #787878;
+    font-size: 13px;
+    line-height: 2.5;
+  }
+  
+  .active {
+   width: 3px;
+   height: 22px;
+   margin-left: 6.5px;
+   margin-top: -28px;
+   position: absolute;
+   background-color: #FF5F00;
+  }
+  
+  .tree-nav__item-title .icon {
+    display: inline;
+    padding-left: 1.6rem;
+    margin-right: 0.8rem;
+    color: #666;
+    font-size: 1.4rem;
+    position: relative;
+  }
+  .tree-nav__item-title .icon::before {
+    top: 0;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 1.6rem;
+    text-align: center;
+  }
+  
+  .tree-nav__item-title::-webkit-details-marker {
+    display: none;
+  }
+  
+  

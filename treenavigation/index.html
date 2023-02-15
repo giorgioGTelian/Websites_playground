@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Replica - Tree Nav </title>
+  <!-- Style and fonts -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+
+<!-- modules and function -->
+
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  //active and deactivate orange bar
+ const elements = document.querySelectorAll("#active");
+
+document.addEventListener("click", function(event) {
+  elements.forEach(function(element) {
+    element.classList.remove("active");
+  });
+  if (event.target.classList.contains("active")) {
+    event.target.classList.add("active");
+  }
+});
+
+// refreshing page automatically when viewport size change  
+window.onresize = function(event) {
+  document.location.reload(true);
+}
+
+var href = window.location.href.split("/")
+var html_location = href[href.length-1]
+
+if (window.innerWidth >= 960 && html_location !== "index.html") {
+    window.location = "index.html";
+}
+
+if (window.innerWidth < 960 && html_location !== "index2.html") {
+    window.location = "index2.html";
+}
+</script>
+ </head>
+
+
+ <body>
+
+<!-- tree navigation -->
+<nav class="tree-nav">
+
+  <details class=" is-expandable" open>
+    <summary class=""><img class="home-logo" src="./svg/home.svg"/>  Home</summary>
+    <details class="tree-nav__item is-expandable">
+    
+      <summary class="tree-nav__item-title">Products</summary>
+      <details class="tree-nav__item is-expandable">
+   
+        <summary class="tree-nav__item-title"> Furniture</summary>
+        <details class="tree-nav__item is-expandable">
+          <summary class="tree-nav__item-title">Sofa & Armchairs</summary>
+          <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">Sofas</summary>
+            <div class="tree-nav__item"></div>
+          </details>
+          <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">Armchairs</summary>
+            <div class="tree-nav__item"></div>
+          </details>
+          <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">Easychairs</summary>
+            <div class="tree-nav__item"></div>
+          </details>
+          <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">Chaise Longues</summary>
+            <div class="tree-nav__item"></div>
+          </details>
+          <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">Poufs</summary>
+            <div class="tree-nav__item"></div>
+          </details>
+        </details>
+        <details class="tree-nav__item is-expandable">
+          <summary class="tree-nav__item-title">Tables & Chairs</summary>
+        </details>
+        <details class="tree-nav__item is-expandable">
+          <summary class="tree-nav__item-title">Storage System</summary>
+        </details>
+        <details class="tree-nav__item is-expandable">
+          <summary class="tree-nav__item-title">Sleeping Area</summary>
+        </details>
+       
+      </details>
+      
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">Lighting</summary>
+        <div class="tree-nav__item">
+
+        </div>
+      </details>
+      
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">Outdoor</summary>
+        <div class="tree-nav__item">
+
+        </div>
+      </details>
+
+      <details class="tree-nav__item is-expandable">
+        <summary class="tree-nav__item-title">Office</summary>
+        <div class="tree-nav__item">
+
+        </div>
+      </details>
+      
+    </details>
+
+    <details class="tree-nav__item is-expandable">
+    
+      <summary class="tree-nav__item-title">Materials</summary>
+      <details class="tree-nav__item is-expandable">
+        
+          <summary class="tree-nav__item-title">Fabric</summary>
+          <div class="tree-nav__item">
+  
+          </div>
+        </details>
+        
+        <details class="tree-nav__item is-expandable">
+          <summary class="tree-nav__item-title">Wood</summary>
+          <div class="tree-nav__item">
+  
+          </div>
+        </details>
+      </details>
+      
+     
+      
+      
+    
+
+
+    <details class="tree-nav__item is-expandable">
+    
+      <summary class="tree-nav__item-title">Brands</summary>
+      
+     
+      
+      
+    </details>
+
+  </details>
+  </details>
+<!-- favorite and owned TODO find a better svg-->
+  <summary class=""><img class="home-logo" src="./svg/fav_nolit.png">  Favourite </summary>
+  <summary class=""><img class="home-logo" src="svg/owned_notlit.png">  Owned </summary>
+
+  
+
+</nav>
+
+</body>
+</html>
+
+

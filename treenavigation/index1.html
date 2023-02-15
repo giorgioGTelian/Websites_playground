@@ -1,0 +1,337 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        * {
+    background-color: #ffffff;
+    color: #282828;  
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Inter';
+    margin: 0;
+    padding: 3rem;
+}
+
+.nav-pills > li > a {
+   border-radius: 0;
+}
+
+#wrapper {
+   padding-left: 0;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+   overflow: hidden;
+}
+
+#wrapper.toggled {
+   padding-left: 250px;
+   overflow: hidden;
+}
+
+#sidebar-wrapper {
+   z-index: 1000;
+   position: absolute;
+   left: 250px;
+   width: 0;
+   height: 100%;
+   margin-left: -250px;
+   overflow-y: auto;
+   background-color: #ffffff;
+    color: #282828;  
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+   font-size: 13px;
+    line-height: 24px;
+    font-family: 'Inter';
+   
+    
+}
+
+#wrapper.toggled #sidebar-wrapper {
+   width: 250px;
+}
+
+#page-content-wrapper {
+   position: absolute;
+   padding: 15px;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+.xyz {
+   min-width: 360px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+   position: relative;
+   margin-right: 0px;
+}
+
+.fixed-brand {
+   width: auto;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+   position: relative;
+   top: 0;
+   width: 250px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-top: 2px;
+   display: block;
+   white-space: nowrap;
+   color: rgb(39, 39, 39);
+  
+}
+
+.sidebar-nav li {
+list-style-type: none;
+   text-indent: 15px;
+   line-height: 40px;
+   margin: 0;
+  padding: 0;
+  padding-left: 1.4rem
+}
+
+.sidebar-nav li a {
+   display: block;
+   text-decoration: none;
+   color: #999999;
+}
+
+.sidebar-nav li a:hover {
+   text-decoration: none;
+   color: black;
+   background: rgba(255, 255, 255, 0.2);
+   border-left: red 2px solid;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+   text-decoration: none;
+   color: black;
+   background: rgba(255, 255, 255, 0.2);
+   border-left: red 2px solid;
+}
+
+.sidebar-nav > .sidebar-brand {
+   height: 65px;
+   font-size: 18px;
+   line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+   color: black;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+   color: #fff;
+   background: none;
+}
+
+.no-margin {
+   margin: 0;
+}
+
+@media (min-width: 768px) {
+   #wrapper {
+      padding-left: 250px;
+   }
+   .fixed-brand {
+      width: 250px;
+   }
+   #wrapper.toggled {
+      padding-left: 0;
+   }
+   #sidebar-wrapper {
+      width: 250px;
+   }
+   #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+   }
+   #wrapper.toggled-2 #sidebar-wrapper {
+      width: 50px;
+   }
+   #wrapper.toggled-2 #sidebar-wrapper:hover {
+      width: 250px;
+   }
+   #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+   }
+   #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+      padding-left: 250px;
+   }
+   #wrapper.toggled-2 #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+      margin-left: -200px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: auto;
+   }
+}
+.tree-nav__item-title {
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: #787878;
+  font-size: 13px;
+  line-height: 2.5;
+}
+
+.tree-nav__item.is-expandable::before {
+  border-left: 2px solid #C3C3C3;
+  content: "";
+  left: 0.3rem;
+  position: absolute;
+  height: calc(100%);
+}
+.tree-nav__item .tree-nav__item {
+  margin-left: 1.4rem;
+}
+.tree-nav__item.is-expandable[open] > .tree-nav__item-title::before {
+  font-family: "Inter";
+  transform: rotate(90deg);
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title {
+  padding-left: 1.4rem;
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title::before {
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: "inter";
+  color: rgb(41, 40, 40);
+  font-size: 1.1rem;
+
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+
+    </style>
+ </head>
+ 
+ <body>
+    <nav class="navbar navbar-default no-margin">
+      
+          
+       </div>
+       <!-- navbar-header-->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+             <li class="active">
+                <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                </button>
+             </li>
+          </ul>
+       </div>
+       <!-- bs-example-navbar-collapse-1 -->
+    </nav>
+    <div id="wrapper">
+       
+       <!-- Sidebar -->
+       <div id="sidebar-wrapper">
+          <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+            <nav class="tree-nav tree-nav__item is-expandable">
+             <li class="active">
+                <a href="#"> <span class="tree-nav__item-title">Products</span></a>
+                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                    <nav class="tree-nav tree-nav__item is-expandable">
+                   <li><a href="#"><span class="tree-nav__item-title">Forniture</span></a></li>
+                   <li><a href="#"><span class="tree-nav__item-title">Outdoor</span></a></li>
+                   <li><a href="#"><span class="tree-nav__item-title">Office</span></a></li>                
+                <li><a href="#"><span class="tree-nav__item-title">Lighting</span></a></li>
+                </ul>
+                   
+                   
+                    
+                
+                
+             </li>
+             <li>
+                <a href="#"></span>Materials</a>
+                <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                   <li><a href="#"><span class="fa-stack fa-lg pull-left"></span>Fabric</a></li>
+                   <li><a href="#"><span class="fa-stack fa-lg pull-left"></span>Wood</a></li>
+                </ul>
+             </li>
+ <li>
+                <a href="#"></span>Brands</a>
+                
+             </li>
+            </nav>
+          </ul>
+        </div>
+       </div>
+       <!-- /#sidebar-wrapper -->
+       <!-- Page Content -->
+       <div id="page-content-wrapper">
+          <div class="container-fluid xyz">
+             <div class="row">
+                <div class="col-lg-12">
+                   <h1>side bar</a></h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laudantium nobis cum dignissimos ex inventore, velit blanditiis. Quod laborum soluta quidem culpa officia eligendi, quam, recusandae iste aliquid amet odit! </p>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+
+ <script>
+    $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-2").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled-2");
+   $('#menu ul').hide();
+});
+
+function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+      function() {
+         var checkElement = $(this).next();
+         if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+            return false;
+         }
+         if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+            $('#menu ul:visible').slideUp('normal');
+            checkElement.slideDown('normal');
+            return false;
+         }
+      }
+   );
+}
+$(document).ready(function() {
+   initMenu();
+});
+ </script>
+  
+</body>
+ </html>
