@@ -1,0 +1,283 @@
+.side-by-side-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  gap: 10px;
+  position: absolute;
+  width: 238px;
+  height: 96px;
+  top: 240px;
+  border: 1px solid #C3C3C3;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+
+/* Black */
+
+  color: #282828;
+
+
+/* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.box1 {
+  left: 289px;
+}
+
+.box2 {
+  left: 552px;
+}
+
+.box3 {
+  left: 815px;
+}
+
+.box4 {
+  left: 1078px;
+}
+
+.rectangle-473 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 223px;
+  top: 10px;
+  background: #FF5F00;
+}
+
+.title_page {
+  /* Products */
+
+
+  position: absolute;
+  width: 107px;
+  height: 32px;
+  left: 290px;
+  top: 184px;
+
+  font-family: 'Inter', 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+/* Black */
+
+  color: #282828;
+}
+
+.title_card {
+    /* All products */
+
+
+  position: absolute;
+  width: 143px;
+  height: 32px;
+  left: 290px;
+  top: 408px;
+
+  font-family: 'Inter', 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Black */
+
+  color: #282828;
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+  .responsive {
+    /* Add styles to make the "responsive" container adjust its layout for screen sizes between 800px and 1600px */
+  }
+
+  /* Add any other styles for specific elements within the "responsive" container */
+  .side-by-side-box {
+    /* Adjust styles for side-by-side boxes */
+  }
+
+  .title_page, .title_card {
+    /* Adjust styles for title elements */
+  }
+
+  /* Add any other styles for specific elements within the "responsive" container */
+}
+
+.hidden {
+  display: none;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10 {
+  position: absolute;
+  width: 267px;
+  height: 368px;
+  border: 1px solid #C3C3C3;
+  background: #FFFFFF;
+}
+
+.card1 {
+  left: 265px;
+  top: 464px;
+}
+
+.card2 {
+  left: 532px;
+  top: 464px;
+}
+
+.card3 {
+  left: 799px;
+  top: 464px;
+}
+
+.card4 {
+  left: 1066px;
+  top: 464px;
+}
+
+.card5 {
+  left: 1333px;
+  top: 464px;
+}
+
+.card6 {
+  left: 265px;
+  top: 832px;
+}
+.card7 {
+  left: 532px;
+  top: 832px;
+}
+.card8 {
+  left: 799px;
+  top: 832px;
+}
+.card9 {
+  left: 1066px;
+  top: 832px;
+}
+.card10 {
+  left: 1333px;
+  top: 832px;
+}
+
+
+.newButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 8px 12px;
+    gap: 10px;
+    position: absolute;
+    width: 55px;
+    height: 32px;
+    right: 12px;
+    top: 12px;
+    border: 1px solid #FF5F00;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #FF5F00;
+    background-color: transparent;
+    box-shadow: none !important;
+  }
+  /* hover and click effect */
+  
+.newButton:hover,
+.newButton:focus,
+.newButton:active {
+  background-color: transparent;
+  color: #FF5F00;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #FF5F00;
+}
+
+
+.textColumn {
+    position: absolute;
+    left: 12px;
+    top: 32px;
+}
+
+.variantsStyle {
+    position: absolute;
+    width: 85px;
+    height: 27px;
+    left: 12px;
+    top: 336px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #787878;
+}
+/* first value
+ */
+ .attributes1 {
+    font-family: "Inter", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    height: 26px;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: -25px;
+    width: 200px;
+    text-transform: uppercase;
+  }
+/* second value
+ */
+ .attributes2 {
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    height: 32px;
+    left: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: -10px;
+    width: 112px;
+  }
+/* three value
+ */
+.attributes3 {
+    font-family: "Inter", Helvetica;
+    font-size: 13px;
+    font-weight: 300;
+    height: 70px;
+    left: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+    top: 15px;
+    white-space: nowrap;
+}
