@@ -1,0 +1,26 @@
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<div class="tabs">
+    <div class="title">
+        <h1>My Header</h1>
+    </div>
+    <div class="tab-header">
+        <div class="active">
+            <a href="#">Profile</a>
+            <a href="#">Orders</a>
+            <a href="#">Address</a>
+        </div>
+    </div>
+    <div class="tab-indicator">
+        <span class="active"></span>
+    </div>
+    <div class="tab-body">
+        <div class="active">
+            <h2>Profile</h2>
+            <p>First Name: <?php echo $user->getFirstName(); ?></p>
+        </div>
+        <div>
+            <h2>Orders</h2>
+            <p>Order 1</p>
+        </div>
+    </div>
