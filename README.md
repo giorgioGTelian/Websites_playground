@@ -3,6 +3,7 @@
 - vanilla html css javascript 
 - jQuery
 - Bootsrap
+- laravel
 
 
 
