@@ -27,6 +27,14 @@ nav {
     position: fixed;
     padding: 25px 60px;
     z-index: 1;
+    background-color: #333;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px; 
+}
+nav:hover {
+  animation: rainbow 3s linear infinite;
 }
 
 nav a img {
@@ -196,4 +204,35 @@ form .form-help :where(label, a) {
     .form-wrapper form {
         margin: 25px 0 40px;
     }
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
 }
