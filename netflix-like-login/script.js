@@ -1,3 +1,4 @@
+//use jQuery
 $('button').on('click', function(){  
   function random(max){
       return Math.random() * (max - 0) + 0;
