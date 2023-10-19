@@ -236,3 +236,22 @@ form .form-help :where(label, a) {
     text-decoration: none;
     color: #fff;
 }
+/*import scSS*/
+@keyframes bang {
+  from {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+ i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
+  }
+
