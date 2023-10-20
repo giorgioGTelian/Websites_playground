@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    margin: 0 auto; /* Center the carousel */
+    max-width: 640px; /* Set a max-width for the carousel */
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.item {
+    position: relative;
+    display: none; /* Hide all carousel items initially */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.carousel-caption h4 {
+    color: #ffffff; /* White text color */
+    margin: 0 0 5px 0; /* Spacing between the header and the paragraph */
+}
+
+.carousel-caption p {
+    color: #ffffff; /* White text color */
+}
+
+.left.carousel-control,
+.right.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+.left.carousel-control {
+    left: 0;
+}
+
+.right.carousel-control {
+    right: 0;
+}
+
+/* Show the active item */
+.item.active {
+    display: block;
+}
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-stacked {
+    width: 210px; /* Set the width of the stacked nav */
+}
+
+.nav li {
+    margin-bottom: 5px; /* Spacing between each list item */
+}
+
+.nav li a {
+    display: block;
+    background-color: #051223;
+    color: #fff;
+    height: 90px;
+    line-height: 90px; /* Vertically center the text */
+    text-align: center;
+    width: 210px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #0a2a50;
+}
