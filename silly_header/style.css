@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  height: 100vh; /* This will make the header take full viewport height */
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will make sure your image covers the full header area without stretching */
+}
+.header {
+  width: 100%;
+  height: 100vh; /* This will make the header take full viewport height */
+  position: relative; /* Added position relative */
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will make sure your image covers the full header area without stretching */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* This adds the grey transparent background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer h2 {
+  margin-bottom: 1rem;
+}
+
+.footer form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#mainNav {
+    background-color: #4A90E2; /* Change to your preferred background color */
+    border-bottom: 3px solid #333; /* Optional: adds a border for a sharper edge */
+    padding: 0.5rem 2rem; /* Adjusts the padding for a snug fit */
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700; /* Adds weight to the brand name for emphasis */
+    font-size: 1.5rem; /* Adjusts the font size for readability */
+}
+
+#mainNav .logo {
+    width: 50px; /* Adjusts the logo size */
+    height: auto;
+}
+
+#mainNav .navbar-toggler {
+    border-color: #333; /* Optional: adds color to the toggle button */
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 500; /* Adds weight to the menu items for emphasis */
+    font-size: 1rem; /* Adjusts the font size for readability */
+    color: black !important; /* Changes the text color to white */
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link,
+#mainNav .navbar-nav .nav-item:hover .nav-link {
+    background-color: #333; /* Changes the background color on hover/active state */
+    color: white !important; /* Ensures the text color is white */
+}
