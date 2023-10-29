@@ -1,0 +1,15 @@
+.navbar {
+  background: black;
+}
+h1, fw-bold {
+  color: blue;
+  font-weight: bolder;
+padding: 20px;
+}
+header.bg-dark {
+  background: linear-gradient(to right, #f0feff 0%, #01233e  100%);
+}
+
+p, .text-success {
+  color: black;
+}
