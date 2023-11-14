@@ -117,3 +117,40 @@ p {
   right: 0;
   margin: auto;
 }
+#mainNav {
+z-index: 1000;
+    background-color: #4A90E2; /* Change to your preferred background color */
+    border-bottom: 3px solid #333; /* Optional: adds a border for a sharper edge */
+    padding: 0.5rem 2rem; /* Adjusts the padding for a snug fit */
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700; /* Adds weight to the brand name for emphasis */
+    font-size: 1.5rem; /* Adjusts the font size for readability */
+}
+
+#mainNav .logo {
+    width: 50px; /* Adjusts the logo size */
+    height: auto;
+}
+
+#mainNav .navbar-toggler {
+    border-color: #333; /* Optional: adds color to the toggle button */
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 500; /* Adds weight to the menu items for emphasis */
+    font-size: 1rem; /* Adjusts the font size for readability */
+    color: black !important; /* Changes the text color to white */
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link,
+#mainNav .navbar-nav .nav-item:hover .nav-link {
+    background-color: #333; /* Changes the background color on hover/active state */
+    color: white !important; /* Ensures the text color is white */
+}
+#mainNav.navbar-shrink {
+    padding: 0.5rem 2rem;
+    background-color: #fff; /* Or any color you prefer */
+}
+
