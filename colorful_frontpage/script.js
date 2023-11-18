@@ -63,5 +63,6 @@ const resetButton = document.getElementById('resetButton');
   
 resetButton.addEventListener('click', () => {
         document.querySelectorAll('.color-trail').forEach(el => el.remove());
+        window.location.reload();
     });
 });
