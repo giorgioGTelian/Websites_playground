@@ -66,3 +66,8 @@ resetButton.addEventListener('click', () => {
         window.location.reload();
     });
 });
+//add jQuery
+$("#resetButton").on("click", function() {
+    history.go(0);
+});
+
