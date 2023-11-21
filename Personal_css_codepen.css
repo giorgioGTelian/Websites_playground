@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+body {
+  background: #27292e;
+   background-image: repeating-linear-gradient(
+       transparent,
+       transparent 50px,
+       purple 50px,
+       purple 53px,
+      transparent 53px,
+  //     transparent 63px,
+  //     purple 63px,
+  //     purple 66px,
+  //     transparent 66px,
+  //     transparent 116px,
+  //     rgba(0, 0, 0, 0.5) 116px,
+  //     rgba(0, 0, 0, 0.5) 166px,
+  //     rgba(255, 255, 255, 0.2) 166px,
+  //     rgba(255, 255, 255, 0.2) 169px,
+  //     rgba(0, 0, 0, 0.5) 169px,
+  //     rgba(0, 0, 0, 0.5) 179px,
+  //     rgba(255, 255, 255, 0.2) 179px,
+  //     rgba(255, 255, 255, 0.2) 182px,
+       rgba(0, 0, 0, 0.5) 182px,
+       rgba(0, 0, 0, 0.5) 232px,
+       transparent 232px
+    ),
+  //   repeating-linear-gradient(
+  //     270deg,
+  //     transparent,
+  //     transparent 50px,
+  //     purple 50px,
+  //     purple 53px,
+  //     transparent 53px,
+  //     transparent 63px,
+  //     purple 63px,
+  //     purple 66px,
+  //     transparent 66px,
+  //     transparent 116px,
+  //     rgba(0, 0, 0, 0.5) 116px,
+  //     rgba(0, 0, 0, 0.5) 166px,
+  //     rgba(255, 255, 255, 0.2) 166px,
+  //     rgba(255, 255, 255, 0.2) 169px,
+  //     rgba(0, 0, 0, 0.5) 169px,
+  //     rgba(0, 0, 0, 0.5) 179px,
+  //     rgba(255, 255, 255, 0.2) 179px,
+  //     rgba(255, 255, 255, 0.2) 182px,
+  //     rgba(0, 0, 0, 0.5) 182px,
+  //     rgba(0, 0, 0, 0.5) 232px,
+  //     transparent 232px
+  //   );
+  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top left,
+    #000000,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top left,
+    #000000,
+    #434343
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.profile-header {
+  background: none;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  .profile-username {
+    color: #fff;
+  }
+}
+
+#links-and-stats {
+  background: #ffffff;
+  color: #444444;
+}
+
+#profile-followers,
+#profile-following {
+  color: #444444 !important;
+
+  strong {
+    color: #444444 !important;
+  }
+
+  &:hover {
+    color: #e91e63 !important;
+
+    strong {
+      color: #e91e63 !important;
+    }
+  }
+}
+
+.profile-links {
+  a {
+    width: 100%;
+    margin: 2px 10px;
+    cursor: pointer;
+    color: black !important;
+  }
+}
+
+#profile-bio {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ 
+@mixin dots($count) {
+   $text-shadow: ();
+   @for $i from 0 through $count {
+     $text-shadow: $text-shadow,
+       (-0.5+ (random()) * 3) +
+        em
+         (-0.5+ (random()) * 3) +
+        em
+        7px
+         hsla(random() * 360, 100%, 50%, 0.9);
+  }
+   text-shadow: $text-shadow;
+ }
+
+ head::before,
+ head::after,
+ body::before,
+ body::after {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 3em;
+   height: 3em;
+   content: ".";
+   font-size: 50px;
+   mix-blend-mode: screen;
+   animation: 44s -27s move infinite ease-in-out alternate;
+   z-index: -1;
+ }
+
+ body::before {
+   @include dots(40);
+  animation-duration: 44s;
+  animation-delay: -27s;
+ }
+
+ body::after {
+   @include dots(40);
+   animation-duration: 43s;
+  animation-delay: -32s;
+ }
+
+ head::before {
+   @include dots(40);
+  animation-duration: 42s;
+  animation-delay: -23s;
+ }
+
+head::after {
+   @include dots(40);
+   animation-duration: 41s;
+   animation-delay: -19s;
+}
+
+ @keyframes move {
+   from {
+     transform: rotate(0deg) scale(12) translateX(-20px);
+   }
+   to {
+     transform: rotate(360deg) scale(18) translateX(20px);
+   }
+ }
