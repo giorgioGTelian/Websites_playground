@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>My Web Interface</title>
-  <!-- Link to the CSS and JavaScript files for the theme -->
-  <link rel="stylesheet" href="/css/adminlte.css">
-  <script src="/js/adminlte.js"></script>
-  <script src="/js/fetch-data.js"></script>
-</head>
-<body>
-  <!-- Login form -->
-  <form id="login-form" method="post" action="login.php">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  <!-- Container for the two graphs -->
-  <div id="graphs">
-    <div id="graph1"></div>
-    <div id="graph2"></div>
-  </div>
-</body>
-    <script>
-    // Schedule the data fetching functions to run at the specified interval
-    setInterval(fetchData1, interval);
-    setInterval(fetchData2, interval);
-  </script>
-
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <span id="width" class="width-container"></span>
+        <header class="wrapper">
+            <a href="#" class="logo">tastybites</a>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="hero-left wrapper">
+            <h1>Absolutely Tasty Bites</h1>
+            <p>Get all of the best food without tasting their nastiness</p>
+            <a href="#" class="cta-btn">Download app</a>
+        </div>
+        <img src="healthyfood.jpg">
+        
+        <section class="wrapper">
+            <ul class="testimonials">
+                <li>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"</p>
+                        <footer>- John Doe</footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"</p>
+                        <footer>- John Doe</footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"</p>
+                        <footer>- John Doe</footer>
+                    </blockquote>
+                </li>
+            </ul>
+        </section>
+        <script src="index.js"></script>
+    </body>
 </html>
-
-
