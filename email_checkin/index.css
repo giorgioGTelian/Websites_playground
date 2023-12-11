@@ -1,0 +1,144 @@
+  @font-face {
+            font-family: "Ember";
+            font-style: bold;
+            font-weight: 600;
+            src: local("Ember"),
+                url(https://m.media-amazon.com/images/G/	01/outbound/AmazonEmber_Bd._CB1515450239_.WOFF) format("woff");
+        }
+
+        @font-face {
+            font-family: "Ember";
+            font-style: normal;
+            font-weight: 400;
+            src: local("Ember"),
+                url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Rg._CB1515450239_.WOFF) format("woff");
+        }
+
+        @font-face {
+            font-family: "Ember";
+            font-style: light;
+            font-weight: 200;
+            src: local("Ember"),
+                url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Lt._CB1515450239_.WOFF) format("woff");
+        }
+
+        @font-face {
+            font-family: "Ember";
+            font-style: medium;
+            font-weight: 500;
+            src: local("Ember"),
+                url(https://m.media-amazon.com/images/G/01/outbound/AmazonEmber_Md._CB1515450239_.WOFF) format("woff");
+        }
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100% !important;
+            -webkit-text-size-adjust: 100% !important;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        table table table {
+            table-layout: auto;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        #Whatitdoes: A work-around for iOS meddling in triggered links. .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .no-style {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .button-link {
+            text-decoration: none !important;
+        }
+
+        /* Header styles */
+        .header-img {
+            padding: 2rem 0rem;
+        }
+
+        .header-section {
+            width: 95%;
+            margin: auto;
+        }
+
+        .header-body {
+            width: 100%;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            .text-container {
+                width: 95% !important;
+                margin: auto !important;
+            }
+
+            /*Set content to 100% width*/
+            *[class="centered-content"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+
+        .no-style {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media screen and (max-width: 500px) {
+            .full-width-table {
+                width: 95% !important;
+            }
+
+            .claim-code {
+                font-size: 11px !important;
+            }
+
+            #footLogo {
+                width: 75px !important;
+            }
+
+            #claimCodeBox {
+                width: 60% !important;
+            }
+        }
